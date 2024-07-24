@@ -9,7 +9,7 @@
 		"price": 112,
 		"rate": 8.9,
 		"rate_text": "Excellent",
-		"image_url": "./images/hotel_search_1.webp"
+		"image_url": "hotel_search_1.webp"
 	},
 	{
 		"name": "Comfort Suites Airport",
@@ -21,7 +21,7 @@
 		"price": 140,
 		"rate": 9.3,
 		"rate_text": "Exceptional",
-		"image_url": "./images/hotel_search_2.jpg"
+		"image_url": "hotel_search_2.jpg"
 	},
 	{
 		"name": "Four Seasons Hotel",
@@ -33,6 +33,6 @@
 		"price": 99,
 		"rate": 8.8,
 		"rate_text": "Excellent",
-		"image_url": "./images/hotel_search_3.jpg"
+		"image_url": "hotel_search_3.jpg"
 	}
 ]

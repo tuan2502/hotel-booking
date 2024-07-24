@@ -2,7 +2,9 @@
     "plugins": [
       ["module-resolver", {
         "alias": {
-          "@": "./src"
+          "@": "./src",
+          "@data": "./src/data",
+          "@assets": "./src/assets"
         }
       }]
     ]

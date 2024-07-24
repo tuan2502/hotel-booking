@@ -5,7 +5,7 @@
 		"price": 120,
 		"rate": 8.9,
 		"type": "Excellent",
-		"image_url": "./images/hotel_1.webp"
+		"image_url": "hotel_1.webp"
 	},
 	{
 		"name": "Comfort Suites Airport",
@@ -13,7 +13,7 @@
 		"price": 140,
 		"rate": 9.3,
 		"type": "Exceptional",
-		"image_url": "./images/hotel_2.jpg"
+		"image_url": "hotel_2.jpg"
 	},
 	{
 		"name": "Four Seasons Hotel",
@@ -21,7 +21,7 @@
 		"price": 99,
 		"rate": 8.8,
 		"type": "Excellent",
-		"image_url": "./images/hotel_3.jpg"
+		"image_url": "hotel_3.jpg"
 	},
 	{
 		"name": "Hilton Garden Inn",
@@ -29,6 +29,6 @@
 		"price": 105,
 		"rate": 8.9,
 		"type": "Excellent",
-		"image_url": "./images/hotel_4.jpg"
+		"image_url": "hotel_4.jpg"
 	}
 ]

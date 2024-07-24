@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <div className="bg-dark-blue w-full text-white">
-      <div className="container mx-auto p-10">
+    <header className="bg-dark-blue w-full text-white">
+      <div className="container mx-auto p-10 pt-0">
         <div>
           <h1 className="font-bold pb-4">
             A lifetime of discounts? It's Genius.
@@ -17,7 +17,7 @@ const Header = () => {
           </p>
           <Link to='/sign-in'>
             <Button
-              type="secondary"
+              typeButton="secondary"
               textContent="Sign in / Register"
             />
           </Link>
@@ -25,7 +25,7 @@ const Header = () => {
         {/* Search bar */}
         <Search />
       </div>
-    </div>
+    </header>
   );
 };
 

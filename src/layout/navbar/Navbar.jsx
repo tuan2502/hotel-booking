@@ -4,7 +4,7 @@ import Button from '@/components/button/Button';
 
 const Navbar = () => {
   return (
-    <div className="bg-dark-blue w-full text-white">
+    <div className="bg-dark-blue w-full text-white pb-10">
       <div className="container mx-auto px-10 pt-5">
         {/* Navbar above */}
         <div className="flex justify-between items-center pb-5">
