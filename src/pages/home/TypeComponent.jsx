@@ -2,6 +2,7 @@ import React from 'react'
 
 const TypeComponent = ({type}) => {
   const image = require('../../assets/images/' + type.image);
+  // Hiển thị Type
   return (
     <div className='flex-1 rounded-xl overflow-hidden'>
       <img src={image} alt="type images" className='h-[190px] w-full'/>

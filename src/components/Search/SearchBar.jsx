@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { DateRange } from 'react-date-range';
 import FormatDate from '../formatDate/FormatDate';
 
+
 const Search = () => {
   const [form, setForm] = useState({
     location: '',
@@ -81,7 +82,6 @@ const Search = () => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    console.log(form);
   };
 
   return (

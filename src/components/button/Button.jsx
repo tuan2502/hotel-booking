@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+// Hàm xử lý button: primary, secondary
 const Button = ({ className, textContent, typeButton = 'primary', ...props }) => {
   let buttonClasses = 'p-2 transition ease-out duration-700';
 

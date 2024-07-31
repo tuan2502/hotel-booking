@@ -11,6 +11,7 @@ const Home = () => {
   const [cityData, setCityData] = useState(city);
   const [typeData, setTypeData] = useState(types);
 
+  // Hiển thị Home
   return (
     <>
       <Header />

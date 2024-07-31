@@ -1,4 +1,4 @@
-
+// Hàm xử lý format ngày
 const FormatDate = (dataInput) => {
   const date = dataInput ? new Date(dataInput) : new Date();
   const options = { day: '2-digit', month: '2-digit', year: 'numeric' };

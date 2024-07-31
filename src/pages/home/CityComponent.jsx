@@ -2,6 +2,8 @@ import React from 'react';
 
 const CityComponent = ({city}) => {
   const image = require('../../assets/images/' + city.image);
+
+  // Hiển thị City
   return (
     <div
       className="relative flex-1 h-[320px] rounded-xl"

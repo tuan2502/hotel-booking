@@ -2,11 +2,11 @@ import Button from '@/components/button/Button';
 import FormatDate from '@/components/formatDate/FormatDate';
 import React, { useState } from 'react';
 import { DateRange } from 'react-date-range';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
-const SearchPopup = () => {
+
+const SearchPopup = ({ onSearch }) => {
   let { state } = useLocation();
-  const navigate = useNavigate();
   const [form, setForm] = useState({
     ...state.form,
     description: '',
@@ -14,9 +14,9 @@ const SearchPopup = () => {
     maxPrice: 0,
   });
 
-
   const [activeDate, setActiveDate] = useState(false);
 
+  //Xử lý mở hiển thị popup chọn ngày
   const handleDatePicker = () => {
     setActiveDate(!activeDate);
   };
@@ -29,6 +29,7 @@ const SearchPopup = () => {
     },
   ]);
 
+  //Xử lý input description
   const handleDescription = (e) => {
     const { value } = e.target;
     setForm((prevForm) => ({
@@ -37,6 +38,7 @@ const SearchPopup = () => {
     }));
   };
 
+  //Xử lý input minPrice
   const handleMinPrice = (e) => {
     const { value } = e.target;
     setForm((prevForm) => ({
@@ -45,6 +47,7 @@ const SearchPopup = () => {
     }));
   };
 
+  //Xử lý input maxPrice
   const handleMaxPrice = (e) => {
     const { value } = e.target;
     setForm((prevForm) => ({
@@ -53,6 +56,8 @@ const SearchPopup = () => {
     }));
   };
 
+
+  //Xử lý chọn ngày
   const handleDate = (item) => {
     setDate([item.selection]);
     setForm((prevForm) => ({
@@ -62,6 +67,7 @@ const SearchPopup = () => {
     }));
   };
 
+  //Xử lý input người lớn
   const handleAdult = (e) => {
     const { value } = e.target;
     setForm((prevForm) => ({
@@ -69,7 +75,9 @@ const SearchPopup = () => {
       adult: value,
     }));
   };
+  
 
+  //Xử lý input trẻ con
   const handleChildren = (e) => {
     const { value } = e.target;
     setForm((prevForm) => ({
@@ -78,6 +86,7 @@ const SearchPopup = () => {
     }));
   };
 
+  //Xử lý input room
   const handleRoom = (e) => {
     const { value } = e.target;
     setForm((prevForm) => ({
@@ -85,16 +94,12 @@ const SearchPopup = () => {
       room: value,
     }));
   };
-
-  const handleSearch = (e) => {
-    e.preventDefault();
-    navigate('/search', { state: { form } });
-  };
+  
 
   return (
     <nav className="col-span-1 rounded-xl overflow-hidden">
       <form
-        onSubmit={handleSearch}
+        onSubmit={(e) => onSearch(form, e)}
         className="bg-yellow p-3"
       >
         <h3 className="mb-4 font-bold">Search</h3>
